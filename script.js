@@ -1,44 +1,94 @@
 // Mobile Menu Toggle
 const menuBtn = document.getElementById("menu-btn");
 const mobileMenu = document.getElementById("mobile-menu");
+const siteHeader = document.querySelector(".site-header");
 
-menuBtn.addEventListener("click", () => {
-  mobileMenu.classList.toggle("hidden");
-});
+function setMobileMenuOpen(isOpen) {
+  if (!menuBtn || !mobileMenu) return;
+
+  mobileMenu.classList.toggle("is-open", isOpen);
+  mobileMenu.setAttribute("aria-hidden", String(!isOpen));
+  mobileMenu.inert = !isOpen;
+  menuBtn.setAttribute("aria-expanded", String(isOpen));
+  menuBtn.setAttribute(
+    "aria-label",
+    isOpen ? "Tutup menu navigasi" : "Buka menu navigasi",
+  );
+}
+
+if (menuBtn && mobileMenu) {
+  menuBtn.addEventListener("click", () => {
+    setMobileMenuOpen(menuBtn.getAttribute("aria-expanded") !== "true");
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && menuBtn.getAttribute("aria-expanded") === "true") {
+      setMobileMenuOpen(false);
+      menuBtn.focus();
+    }
+  });
+
+  document.addEventListener("click", (event) => {
+    if (
+      menuBtn.getAttribute("aria-expanded") === "true" &&
+      !mobileMenu.contains(event.target) &&
+      !menuBtn.contains(event.target)
+    ) {
+      setMobileMenuOpen(false);
+    }
+  });
+
+  window.matchMedia("(min-width: 1024px)").addEventListener("change", (event) => {
+    if (event.matches) setMobileMenuOpen(false);
+  });
+}
+
+if (siteHeader) {
+  const updateHeaderOnScroll = () => {
+    siteHeader.classList.toggle("is-scrolled", window.scrollY > 24);
+  };
+  updateHeaderOnScroll();
+  window.addEventListener("scroll", updateHeaderOnScroll, { passive: true });
+}
 
 // Back to Top Button
 const backToTopBtn = document.getElementById("back-to-top");
 
-window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 300) {
-    backToTopBtn.classList.remove("opacity-0", "invisible");
-    backToTopBtn.classList.add("opacity-100", "visible");
-  } else {
-    backToTopBtn.classList.remove("opacity-100", "visible");
-    backToTopBtn.classList.add("opacity-0", "invisible");
-  }
-});
-
-backToTopBtn.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
+if (backToTopBtn) {
+  window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 300) {
+      backToTopBtn.classList.remove("opacity-0", "invisible");
+      backToTopBtn.classList.add("opacity-100", "visible");
+    } else {
+      backToTopBtn.classList.remove("opacity-100", "visible");
+      backToTopBtn.classList.add("opacity-0", "invisible");
+    }
   });
-});
+
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+}
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
 
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth",
-    });
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth",
+      });
+    } else {
+      return;
+    }
 
     // Close mobile menu if open
-    if (mobileMenu) {
-      mobileMenu.classList.add("hidden");
-    }
+    setMobileMenuOpen(false);
   });
 });
 

@@ -103,264 +103,433 @@
       content="wKPr-vE2AdsnnvVCY8JezU5imep4oDYNUjB0_mfkYQ4"
     />
   </head>
-  <body class="font-sans pb-16 md:pb-0">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-      <div class="container mx-auto px-6 py-4">
-        <div class="flex justify-between items-center">
-          <div class="flex items-center">
-            <a href="/">
-              <i class="fas fa-code text-3xl text-blue-600 mr-2"></i>
-              <span class="text-2xl font-bold"
-                >JPW<span class="text-blue-600"> Media</span></span
-              >
-            </a>
+  <body class="font-sans">
+    <!-- Navigation Bar Modern & Menyesuaikan Hero -->
+    <nav
+      class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80 transition-all duration-300"
+      aria-label="Navigasi utama"
+    >
+      <div
+        class="container mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <!-- Brand / Logo -->
+        <a
+          href="/"
+          class="flex items-center gap-2 group"
+          aria-label="JPW Media - Beranda"
+        >
+          <div
+            class="w-10 h-10 rounded-xl bg-blue-600/20 border border-blue-500/30 flex items-center justify-center text-blue-400 group-hover:scale-105 transition-transform"
+          >
+            <i class="fas fa-code text-xl"></i>
           </div>
-          <div class="hidden md:flex items-center space-x-8">
-            <a
-              href="#home"
-              class="nav-link text-gray-800 hover:text-blue-400 transition"
-              >Beranda</a
+          <span class="text-xl font-bold tracking-tight text-white">
+            JPW<span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400"
             >
-            <div class="relative group">
-              <a
-                href="#services"
-                class="nav-link text-gray-800 hover:text-blue-400 transition"
-                aria-haspopup="true"
-                >Layanan</a
-              >
+              Media</span
+            >
+          </span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <div class="hidden lg:flex items-center space-x-1">
+          <a
+            href="#home"
+            class="px-4 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition"
+            >Beranda</a
+          >
+
+          <!-- Dropdown Layanan -->
+          <div class="relative group">
+            <button
+              type="button"
+              class="inline-flex items-center gap-1.5 px-4 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition"
+              aria-haspopup="true"
+            >
+              <span>Layanan</span>
+              <i
+                class="fas fa-chevron-down text-xs text-slate-400 group-hover:rotate-180 transition-transform duration-200"
+              ></i>
+            </button>
+
+            <!-- Dropdown Menu Box (Glassmorphism) -->
+            <div
+              class="absolute left-0 top-full pt-2 hidden group-hover:block group-focus-within:block w-64 z-50"
+            >
               <div
-                class="absolute left-0 top-full hidden group-hover:block group-focus-within:block bg-white shadow-lg rounded-md py-2 min-w-56 z-50"
+                class="bg-slate-900 border border-slate-800 rounded-xl shadow-2xl p-2 backdrop-blur-xl"
               >
                 <a
                   href="/jasa-digital-marketing-pekanbaru.html"
-                  class="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-blue-600 transition"
-                  >Jasa Digital Marketing</a
+                  class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-slate-300 hover:text-white hover:bg-slate-800/80 transition"
                 >
+                  <i class="fas fa-chart-line text-blue-400 w-5"></i>
+                  <span>Jasa Digital Marketing</span>
+                </a>
                 <a
-                  href="/jasa-pembuatan-logo-pekanbaru.html"
-                  class="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-blue-600 transition"
-                  >Jasa Pembuatan Logo</a
+                  href="/jasa-pembuatan-logo.html"
+                  class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-slate-300 hover:text-white hover:bg-slate-800/80 transition"
                 >
+                  <i class="fas fa-paint-brush text-indigo-400 w-5"></i>
+                  <span>Jasa Pembuatan Logo</span>
+                </a>
                 <a
                   href="/jasa-seo-pekanbaru.html"
-                  class="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-blue-600 transition"
-                  >Jasa SEO Professional</a
+                  class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-slate-300 hover:text-white hover:bg-slate-800/80 transition"
                 >
+                  <i class="fas fa-search-dollar text-sky-400 w-5"></i>
+                  <span>Jasa SEO Professional</span>
+                </a>
                 <a
-                  href="/jasa-pembuatan-website-pekanbaru.html"
-                  class="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-blue-600 transition"
-                  >Web Development</a
+                  href="/web-development.html"
+                  class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-slate-300 hover:text-white hover:bg-slate-800/80 transition"
                 >
+                  <i class="fas fa-laptop-code text-blue-400 w-5"></i>
+                  <span>Web Development</span>
+                </a>
               </div>
             </div>
-            <a
-              href="#portfolio"
-              class="nav-link text-gray-800 hover:text-blue-400 transition"
-              >Portofolio</a
-            >
-            <a
-              href="#about"
-              class="nav-link text-gray-800 hover:text-blue-400 transition"
-              >Tentang Kami</a
-            >
-            <a
-              target="_blank"
-              href="/blog"
-              class="nav-link text-gray-800 hover:text-blue-400 transition"
-              >Blog</a
-            >
-            <a
-              href="#contact"
-              class="nav-link text-gray-800 hover:text-blue-400 transition"
-              >Kontak</a
-            >
-            <a
-              target="_blank"
-              href="https://wa.me/6281365036634"
-              class="call-button text-white font-bold py-2 px-4 rounded-full transition duration-300 flex items-center"
-            >
-              <i class="fab fa-whatsapp mr-2"></i> Hubungi Kami
-            </a>
           </div>
-          <div class="md:hidden flex items-center">
-            <a
-              target="_blank"
-              href="https://wa.me/6281365036634"
-              class="call-button text-white font-bold py-2 px-3 rounded-full transition duration-300 mr-3 flex items-center"
-            >
-              <i class="fab fa-whatsapp"></i>
-            </a>
-            <button id="menu-btn" class="text-gray-800 focus:outline-none">
-              <i class="fas fa-bars text-2xl"></i>
-            </button>
-          </div>
-        </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
-          <a
-            href="#home"
-            class="block py-2 text-gray-800 hover:text-blue-600 transition"
-            >Beranda</a
-          >
-          <a
-            href="#services"
-            class="block py-2 text-gray-800 hover:text-blue-600 transition"
-            >Layanan</a
-          >
-          <div class="pl-4 border-l-2 border-blue-100 ml-2">
-            <a
-              href="/jasa-digital-marketing-pekanbaru.html"
-              class="block py-2 text-gray-700 hover:text-blue-600 transition"
-              >Jasa Digital Marketing</a
-            >
-            <a
-              href="/jasa-pembuatan-logo-pekanbaru.html"
-              class="block py-2 text-gray-700 hover:text-blue-600 transition"
-              >Jasa Pembuatan Logo</a
-            >
-            <a
-              href="/jasa-seo-pekanbaru.html"
-              class="block py-2 text-gray-700 hover:text-blue-600 transition"
-              >Jasa SEO Professional</a
-            >
-            <a
-              href="/jasa-pembuatan-website-pekanbaru.html"
-              class="block py-2 text-gray-700 hover:text-blue-600 transition"
-              >Web Development</a
-            >
-          </div>
+
           <a
             href="#portfolio"
-            class="block py-2 text-gray-800 hover:text-blue-600 transition"
+            class="px-4 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition"
             >Portofolio</a
           >
           <a
             href="#about"
-            class="block py-2 text-gray-800 hover:text-blue-600 transition"
+            class="px-4 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition"
             >Tentang Kami</a
           >
           <a
-            target="_blank"
             href="/blog"
-            class="block py-2 text-gray-800 hover:text-blue-600 transition"
+            target="_blank"
+            class="px-4 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition"
             >Blog</a
           >
           <a
             href="#contact"
-            class="block py-2 text-gray-800 hover:text-blue-600 transition"
+            class="px-4 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition"
             >Kontak</a
           >
+        </div>
+
+        <!-- Header Actions (CTA & Mobile Menu Trigger) -->
+        <div class="flex items-center gap-4">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://wa.me/6281365036634?text=Halo,%20saya%20tertarik%20menggunakan%20jasa%20JPW%20Media."
+            class="hidden sm:inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold py-2.5 px-5 rounded-xl shadow-lg shadow-blue-600/20 transition-all duration-300 transform hover:-translate-y-0.5"
+            aria-label="Hubungi JPW Media melalui WhatsApp"
+          >
+            <i class="fab fa-whatsapp text-lg"></i>
+            <span>Hubungi Kami</span>
+          </a>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="menu-btn"
+            class="lg:hidden p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:bg-slate-800 transition focus:outline-none"
+            type="button"
+            aria-label="Buka menu navigasi"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Dropdown Panel -->
+      <div
+        id="mobile-menu"
+        class="hidden lg:hidden bg-slate-950 border-b border-slate-800 px-6 py-6 space-y-3 shadow-2xl"
+        aria-hidden="true"
+      >
+        <a
+          href="#home"
+          class="block py-2 text-slate-300 hover:text-white font-medium"
+          >Beranda</a
+        >
+
+        <div class="py-2 border-t border-slate-900 pt-3">
+          <p
+            class="text-xs font-semibold text-blue-400 uppercase tracking-wider mb-2"
+          >
+            Layanan Kami
+          </p>
+          <div class="pl-3 space-y-2 border-l border-slate-800">
+            <a
+              href="/jasa-digital-marketing-pekanbaru.html"
+              class="block py-1.5 text-sm text-slate-400 hover:text-white"
+              >Jasa Digital Marketing</a
+            >
+            <a
+              href="/jasa-pembuatan-logo.html"
+              class="block py-1.5 text-sm text-slate-400 hover:text-white"
+              >Jasa Pembuatan Logo</a
+            >
+            <a
+              href="/jasa-seo-pekanbaru.html"
+              class="block py-1.5 text-sm text-slate-400 hover:text-white"
+              >Jasa SEO Professional</a
+            >
+            <a
+              href="/web-development.html"
+              class="block py-1.5 text-sm text-shadow text-slate-400 hover:text-white"
+              >Web Development</a
+            >
+          </div>
+        </div>
+
+        <div class="pt-3 border-t border-slate-900 space-y-2">
+          <a
+            href="#portfolio"
+            class="block py-2 text-slate-300 hover:text-white font-medium"
+            >Portofolio</a
+          >
+          <a
+            href="#about"
+            class="block py-2 text-slate-300 hover:text-white font-medium"
+            >Tentang Kami</a
+          >
+          <a
+            href="/blog"
+            target="_blank"
+            class="block py-2 text-slate-300 hover:text-white font-medium"
+            >Blog</a
+          >
+          <a
+            href="#contact"
+            class="block py-2 text-slate-300 hover:text-white font-medium"
+            >Kontak</a
+          >
+
+          <div class="pt-4">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://wa.me/6281365036634"
+              class="flex items-center justify-center gap-2 w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 px-6 rounded-xl shadow-md transition"
+            >
+              <i class="fab fa-whatsapp text-lg"></i>
+              <span>Hubungi Kami via WhatsApp</span>
+            </a>
+          </div>
         </div>
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section
-      id="home"
-      class="hero-gradient text-white py-20 md:py-32 bg-cover bg-center relative"
-      style="background-image: url(&quot;hero2.png&quot;)"
-    >
-      <div class="absolute inset-0 bg-black opacity-70"></div>
-      <!-- Overlay untuk teks lebih terlihat -->
-      <div class="container mx-auto px-6 relative z-10">
+    <!-- Hero Section Modern & SEO Optimized -->
+    <header id="home" class="relative bg-slate-900 text-white overflow-hidden">
+      <!-- Background Image & Modern Gradient Overlay -->
+      <div class="absolute inset-0 z-0">
+        <img
+          src="hero2.png"
+          alt="Jasa Pembuatan Website dan SEO Profesional di Pekanbaru"
+          class="w-full h-full object-cover object-center transform scale-105 animate-fade-in"
+          loading="eager"
+          fetchpriority="high"
+        />
         <div
-          class="flex flex-col justify-center items-center text-center md:text-left h-full"
-        >
-          <div class="md:w-1/2 mb-12 md:mb-0">
-            <h1
-              class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-center"
-            >
-              Jasa Pembuatan
-              <span class="text-blue-200">Website & SEO</span> Pekanbaru
-              Profesional
-            </h1>
-            <p class="text-xl md:text-2xl mb-8 text-blue-100 text-center">
-              Website responsif dengan struktur SEO yang baik untuk membantu
-              bisnis Anda lebih mudah ditemukan secara online.
-            </p>
+          class="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/80 to-slate-950/70 backdrop-blur-[2px]"
+        ></div>
+      </div>
 
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                target="_blank"
-                href="https://wa.me/6281365036634"
-                class="bg-white hover:bg-gray-100 text-blue-600 font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 text-center"
-              >
-                <i class="fab fa-whatsapp"></i> Mau Konsultasi
-              </a>
-              <a
-                href="#services"
-                class="bg-transparent hover:bg-blue-700 text-white font-bold py-3 px-8 border-2 border-white rounded-full transition duration-300 transform hover:scale-105 text-center"
-              >
-                Layanan Jasa
-              </a>
+      <!-- Decorative Glow Effects (Modern Touch) -->
+      <div
+        class="absolute top-1/4 left-10 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl pointer-events-none"
+      ></div>
+      <div
+        class="absolute bottom-10 right-10 w-96 h-96 bg-indigo-500/15 rounded-full blur-3xl pointer-events-none"
+      ></div>
+
+      <!-- Content Container -->
+      <div class="container relative z-10 mx-auto px-6 py-24 md:py-36 lg:py-44">
+        <div class="max-w-3xl mx-auto text-center flex flex-col items-center">
+          <!-- Badge / Pre-heading (SEO & Trust Signal) -->
+          <div
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-400/30 text-blue-300 text-sm font-medium mb-6 backdrop-blur-md shadow-inner"
+          >
+            <span
+              class="flex h-2 w-2 rounded-full bg-blue-400 animate-pulse"
+            ></span>
+            <span>Agency Digital & Web Development Terpercaya di Riau</span>
+          </div>
+
+          <!-- Main Heading (H1 Optimal untuk SEO Keyword Target) -->
+          <h1
+            class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-[1.15]"
+          >
+            Jasa Pembuatan
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-sky-300 to-indigo-300"
+              >Website & SEO</span
+            >
+            Pekanbaru Profesional
+          </h1>
+
+          <!-- Subtitle / Deskripsi Pendukung -->
+          <p
+            class="text-lg sm:text-xl text-slate-300 mb-10 max-w-2xl leading-relaxed"
+          >
+            Wujudkan website bisnis berkecepatan tinggi, responsif, dan
+            dioptimasi SEO mendalam agar tampil di halaman pertama Google dan
+            mendatangkan pelanggan setiap hari.
+          </p>
+
+          <!-- Call to Action (CTA) Buttons -->
+          <div
+            class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto"
+          >
+            <!-- Primary CTA (WhatsApp) -->
+            <a
+              href="https://wa.me/6281365036634?text=Halo,%20saya%20tertarik%20menggunakan%20jasa%20pembuatan%20website%20dan%20SEO."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold py-4 px-8 rounded-xl shadow-lg shadow-blue-500/25 transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0"
+            >
+              <i class="fab fa-whatsapp text-xl"></i>
+              <span>Konsultasi Gratis Sekarang</span>
+            </a>
+
+            <!-- Secondary CTA (Internal Link ke Layanan) -->
+            <a
+              href="#services"
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-800/80 hover:bg-slate-800 text-slate-200 hover:text-white font-semibold py-4 px-8 rounded-xl border border-slate-700/80 backdrop-blur-sm transition-all duration-300"
+            >
+              <span>Lihat Layanan Kami</span>
+              <i class="fas fa-arrow-down text-xs"></i>
+            </a>
+          </div>
+
+          <!-- Micro Trust Badges / Social Proof (Opsional namun bagus untuk konversi & SEO authority) -->
+          <div
+            class="grid grid-cols-3 gap-6 mt-16 pt-10 border-t border-slate-800/80 w-full max-w-xl text-center"
+          >
+            <div>
+              <p class="text-2xl font-bold text-white">100%</p>
+              <p class="text-xs text-slate-400 mt-1">Mobile Responsive</p>
+            </div>
+            <div>
+              <p class="text-2xl font-bold text-white">SEO</p>
+              <p class="text-xs text-slate-400 mt-1">Optimized Structure</p>
+            </div>
+            <div>
+              <p class="text-2xl font-bold text-white">Fast</p>
+              <p class="text-xs text-slate-400 mt-1">Loading Speed</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </header>
 
     <!-- Clients Section -->
-    <section class="py-12 bg-gray-50">
-      <div class="container mx-auto px-6">
-        <p class="text-center text-gray-500 mb-8">
+    <section
+      class="py-16 bg-slate-900/50 border-y border-slate-800/60 relative overflow-hidden"
+    >
+      <div class="container mx-auto px-6 relative z-10">
+        <p
+          class="text-center text-slate-400 text-sm font-medium uppercase tracking-wider mb-10"
+        >
           Dipercaya oleh bisnis dan organisasi di Pekanbaru dan sekitarnya
         </p>
-        <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
-          <img
-            src="./img/icc pekanbaru.png"
-            alt="Logo ICC Pekanbaru"
-            loading="lazy"
-            decoding="async"
-            class="h-8 md:h-20 opacity-70 hover:opacity-100 transition"
-          />
-          <img
-            src="./img/givari.png"
-            alt="Logo Givari"
-            loading="lazy"
-            decoding="async"
-            class="h-8 md:h-20 opacity-70 hover:opacity-100 transition"
-          />
-          <img
-            src="./img/ric.png"
-            alt="Logo RIC"
-            loading="lazy"
-            decoding="async"
-            class="h-8 md:h-20 opacity-70 hover:opacity-100 transition"
-          />
-          <img
-            src="./img/sedayu.png"
-            alt="Logo Sedayu"
-            loading="lazy"
-            decoding="async"
-            class="h-8 md:h-20 opacity-70 hover:opacity-100 transition"
-          />
-          <img
-            src="./img/panca laksmana teknindo.png"
-            alt="Logo Panca Laksmana Teknindo"
-            loading="lazy"
-            decoding="async"
-            class="h-8 md:h-20 opacity-70 hover:opacity-100 transition"
-          />
+        <div
+          class="flex flex-wrap justify-center items-center gap-10 md:gap-16"
+        >
+          <div
+            class="p-3 rounded-xl bg-slate-900/40 border border-slate-800/80 backdrop-blur-sm transition-all duration-300 hover:border-blue-500/50 hover:scale-105 group"
+          >
+            <img
+              src="./img/icc pekanbaru.png"
+              alt="Logo ICC Pekanbaru"
+              loading="lazy"
+              decoding="async"
+              class="h-8 md:h-12 w-auto object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition duration-300"
+            />
+          </div>
+          <div
+            class="p-3 rounded-xl bg-slate-900/40 border border-slate-800/80 backdrop-blur-sm transition-all duration-300 hover:border-blue-500/50 hover:scale-105 group"
+          >
+            <img
+              src="./img/givari.png"
+              alt="Logo Givari"
+              loading="lazy"
+              decoding="async"
+              class="h-8 md:h-12 w-auto object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition duration-300"
+            />
+          </div>
+          <div
+            class="p-3 rounded-xl bg-slate-900/40 border border-slate-800/80 backdrop-blur-sm transition-all duration-300 hover:border-blue-500/50 hover:scale-105 group"
+          >
+            <img
+              src="./img/ric.png"
+              alt="Logo RIC"
+              loading="lazy"
+              decoding="async"
+              class="h-8 md:h-12 w-auto object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition duration-300"
+            />
+          </div>
+          <div
+            class="p-3 rounded-xl bg-slate-900/40 border border-slate-800/80 backdrop-blur-sm transition-all duration-300 hover:border-blue-500/50 hover:scale-105 group"
+          >
+            <img
+              src="./img/sedayu.png"
+              alt="Logo Sedayu"
+              loading="lazy"
+              decoding="async"
+              class="h-8 md:h-12 w-auto object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition duration-300"
+            />
+          </div>
+          <div
+            class="p-3 rounded-xl bg-slate-900/40 border border-slate-800/80 backdrop-blur-sm transition-all duration-300 hover:border-blue-500/50 hover:scale-105 group"
+          >
+            <img
+              src="./img/panca laksmana teknindo.png"
+              alt="Logo Panca Laksmana Teknindo"
+              loading="lazy"
+              decoding="async"
+              class="h-8 md:h-12 w-auto object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition duration-300"
+            />
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-20 bg-white">
-      <div class="container mx-auto px-6">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+    <section id="services" class="py-24 bg-slate-950 text-white relative">
+      <div class="container mx-auto px-6 relative z-10">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span
+            class="text-blue-400 font-semibold text-sm uppercase tracking-wider bg-blue-500/10 px-4 py-1.5 rounded-full border border-blue-500/20 inline-block mb-4"
+            >Layanan Unggulan</span
+          >
+          <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-6">
             Layanan Jasa
-            <span class="text-blue-600"
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400"
               >Pembuatan Website & SEO di Pekanbaru</span
             >
           </h2>
-          <p class="text-gray-600 max-w-2xl mx-auto">
+          <p class="text-slate-300 text-lg leading-relaxed">
             Kami hadir untuk membantu UMKM, perusahaan, hingga personal brand
             membangun eksistensi online yang kuat melalui
             <a
-              style="color: salmon"
+              class="text-blue-400 underline hover:text-blue-300 transition font-medium"
               href="https://jasapembuatanwebsitepekanbaru.github.io/"
             >
               jasa pembuatan website pekanbaru</a
@@ -374,154 +543,227 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <!-- Jasa Pembuatan Website Bisnis -->
           <div
-            class="service-card bg-white p-8 rounded-xl shadow-md border border-gray-100 transition duration-500"
+            class="service-card bg-slate-900/80 backdrop-blur-xl p-8 rounded-2xl shadow-xl border border-slate-800 hover:border-blue-500/50 transition-all duration-300 flex flex-col justify-between group"
           >
-            <div
-              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6"
-            >
-              <i class="fas fa-briefcase text-blue-600 text-2xl"></i>
+            <div>
+              <div
+                class="w-16 h-16 bg-blue-600/10 border border-blue-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"
+              >
+                <i class="fas fa-briefcase text-blue-400 text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-3 text-white">Website Bisnis</h3>
+              <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                Website profesional untuk meningkatkan kredibilitas dan daya
+                saing bisnis Anda secara online.
+              </p>
+              <ul class="text-slate-300 text-sm space-y-3 mb-8">
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center text-xs mr-3 mt-0.5 flex-shrink-0"
+                  >
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <span>Desain profesional & mobile-friendly</span>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center text-xs mr-3 mt-0.5 flex-shrink-0"
+                  >
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <span>Integrasi dengan media sosial</span>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center text-xs mr-3 mt-0.5 flex-shrink-0"
+                  >
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <span>Dukungan teknis & update rutin</span>
+                </li>
+              </ul>
             </div>
-            <h3 class="text-xl font-bold mb-3">Website Bisnis</h3>
-            <p class="text-gray-600 mb-4">
-              Website profesional untuk meningkatkan kredibilitas dan daya saing
-              bisnis Anda secara online.
-            </p>
-            <ul class="text-gray-600 space-y-2 mb-4">
-              <li class="flex items-start">
-                <i class="fas fa-check text-blue-500 text-sm mr-2 mt-1"></i>
-                <span>Desain profesional & mobile-friendly</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-check text-blue-500 text-sm mr-2 mt-1"></i>
-                <span>Integrasi dengan media sosial</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-check text-blue-500 text-sm mr-2 mt-1"></i>
-                <span>Dukungan teknis & update rutin</span>
-              </li>
-            </ul>
             <a
               href="#contact"
-              class="text-blue-600 font-medium inline-flex items-center"
+              class="text-blue-400 font-semibold text-sm inline-flex items-center group-hover:text-blue-300 transition"
             >
-              Pelajari lebih lanjut <i class="fas fa-arrow-right ml-2"></i>
+              Pelajari lebih lanjut
+              <i
+                class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"
+              ></i>
             </a>
           </div>
 
           <!-- Jasa Optimasi SEO -->
           <div
-            class="service-card bg-white p-8 rounded-xl shadow-md border border-gray-100 transition duration-500"
+            class="service-card bg-slate-900/80 backdrop-blur-xl p-8 rounded-2xl shadow-xl border border-slate-800 hover:border-blue-500/50 transition-all duration-300 flex flex-col justify-between group"
           >
-            <div
-              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6"
-            >
-              <i class="fas fa-chart-line text-blue-600 text-2xl"></i>
-            </div>
-            <h3 class="text-xl font-bold mb-3">Optimasi SEO</h3>
-            <p class="text-gray-600 mb-4">
-              <a style="color: salmon" href="/jasa-seo-pekanbaru.html">
-                Jasa SEO Pekanbaru</a
+            <div>
+              <div
+                class="w-16 h-16 bg-blue-600/10 border border-blue-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"
               >
-              untuk meningkatkan visibilitas website Anda di mesin pencari dan
-              menarik lebih banyak calon pelanggan.
-            </p>
-            <ul class="text-gray-600 space-y-2 mb-4">
-              <li class="flex items-start">
-                <i class="fas fa-check text-blue-500 text-sm mr-2 mt-1"></i>
-                <span>SEO on-page & off-page</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-check text-blue-500 text-sm mr-2 mt-1"></i>
-                <span>Riset kata kunci kompetitif</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-check text-blue-500 text-sm mr-2 mt-1"></i>
-                <span>Monitoring & laporan bulanan</span>
-              </li>
-            </ul>
+                <i class="fas fa-chart-line text-blue-400 text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-3 text-white">Optimasi SEO</h3>
+              <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                <a
+                  class="text-blue-400 underline hover:text-blue-300 font-medium"
+                  href="/jasa-seo-pekanbaru.html"
+                >
+                  Jasa SEO Pekanbaru</a
+                >
+                untuk meningkatkan visibilitas website Anda di mesin pencari dan
+                menarik lebih banyak calon pelanggan.
+              </p>
+              <ul class="text-slate-300 text-sm space-y-3 mb-8">
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center text-xs mr-3 mt-0.5 flex-shrink-0"
+                  >
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <span>SEO on-page & off-page</span>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center text-xs mr-3 mt-0.5 flex-shrink-0"
+                  >
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <span>Riset kata kunci kompetitif</span>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center text-xs mr-3 mt-0.5 flex-shrink-0"
+                  >
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <span>Monitoring & laporan bulanan</span>
+                </li>
+              </ul>
+            </div>
             <a
               href="#contact"
-              class="text-blue-600 font-medium inline-flex items-center"
+              class="text-blue-400 font-semibold text-sm inline-flex items-center group-hover:text-blue-300 transition"
             >
-              Pelajari lebih lanjut <i class="fas fa-arrow-right ml-2"></i>
+              Pelajari lebih lanjut
+              <i
+                class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"
+              ></i>
             </a>
           </div>
 
           <!-- Jasa Google Ads -->
           <div
-            class="service-card bg-white p-8 rounded-xl shadow-md border border-gray-100 transition duration-500"
+            class="service-card bg-slate-900/80 backdrop-blur-xl p-8 rounded-2xl shadow-xl border border-slate-800 hover:border-blue-500/50 transition-all duration-300 flex flex-col justify-between group"
           >
-            <div
-              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6"
-            >
-              <i class="fab fa-google text-blue-600 text-2xl"></i>
+            <div>
+              <div
+                class="w-16 h-16 bg-blue-600/10 border border-blue-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"
+              >
+                <i class="fab fa-google text-blue-400 text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-3 text-white">Google Ads</h3>
+              <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                Kampanye iklan Google yang efektif dan tertarget untuk
+                meningkatkan konversi bisnis Anda.
+              </p>
+              <ul class="text-slate-300 text-sm space-y-3 mb-8">
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center text-xs mr-3 mt-0.5 flex-shrink-0"
+                  >
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <span>Strategi iklan sesuai target market</span>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center text-xs mr-3 mt-0.5 flex-shrink-0"
+                  >
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <span>Optimalisasi budget iklan</span>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center text-xs mr-3 mt-0.5 flex-shrink-0"
+                  >
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <span>Laporan performa berkala</span>
+                </li>
+              </ul>
             </div>
-            <h3 class="text-xl font-bold mb-3">Google Ads</h3>
-            <p class="text-gray-600 mb-4">
-              Kampanye iklan Google yang efektif dan tertarget untuk
-              meningkatkan konversi bisnis Anda.
-            </p>
-            <ul class="text-gray-600 space-y-2 mb-4">
-              <li class="flex items-start">
-                <i class="fas fa-check text-blue-500 text-sm mr-2 mt-1"></i>
-                <span>Strategi iklan sesuai target market</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-check text-blue-500 text-sm mr-2 mt-1"></i>
-                <span>Optimalisasi budget iklan</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-check text-blue-500 text-sm mr-2 mt-1"></i>
-                <span>Laporan performa berkala</span>
-              </li>
-            </ul>
             <a
               href="#contact"
-              class="text-blue-600 font-medium inline-flex items-center"
+              class="text-blue-400 font-semibold text-sm inline-flex items-center group-hover:text-blue-300 transition"
             >
-              Pelajari lebih lanjut <i class="fas fa-arrow-right ml-2"></i>
+              Pelajari lebih lanjut
+              <i
+                class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"
+              ></i>
             </a>
           </div>
 
           <!-- Jasa Pembuatan Aplikasi Website -->
           <div
-            class="service-card bg-white p-8 rounded-xl shadow-md border border-gray-100 transition duration-500"
+            class="service-card bg-slate-900/80 backdrop-blur-xl p-8 rounded-2xl shadow-xl border border-slate-800 hover:border-blue-500/50 transition-all duration-300 flex flex-col justify-between group"
           >
-            <div
-              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6"
-            >
-              <i class="fas fa-code text-blue-600 text-2xl"></i>
-            </div>
-            <h3 class="text-xl font-bold mb-3">Aplikasi Website</h3>
-            <p class="text-gray-600 mb-4">
-              Sebagai
-              <a
-                style="color: red"
-                href="https://webdeveloperpekanbaru.github.io"
+            <div>
+              <div
+                class="w-16 h-16 bg-blue-600/10 border border-blue-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"
               >
-                Web Developer Pekanbaru</a
-              >, kami mengembangkan aplikasi berbasis website sebagai solusi
-              bisnis digital yang dinamis dan terintegrasi.
-            </p>
-            <ul class="text-gray-600 space-y-2 mb-4">
-              <li class="flex items-start">
-                <i class="fas fa-check text-blue-500 text-sm mr-2 mt-1"></i>
-                <span>Web app custom sesuai kebutuhan</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-check text-blue-500 text-sm mr-2 mt-1"></i>
-                <span>Teknologi modern & scalable</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-check text-blue-500 text-sm mr-2 mt-1"></i>
-                <span>Integrasi API & database</span>
-              </li>
-            </ul>
+                <i class="fas fa-code text-blue-400 text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-3 text-white">
+                Aplikasi Website
+              </h3>
+              <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                Sebagai
+                <a
+                  class="text-blue-400 underline hover:text-blue-300 font-medium"
+                  href="https://webdeveloperpekanbaru.github.io"
+                >
+                  Web Developer Pekanbaru</a
+                >, kami mengembangkan aplikasi berbasis website sebagai solusi
+                bisnis digital yang dinamis dan terintegrasi.
+              </p>
+              <ul class="text-slate-300 text-sm space-y-3 mb-8">
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center text-xs mr-3 mt-0.5 flex-shrink-0"
+                  >
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <span>Web app custom sesuai kebutuhan</span>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center text-xs mr-3 mt-0.5 flex-shrink-0"
+                  >
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <span>Teknologi modern & scalable</span>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center text-xs mr-3 mt-0.5 flex-shrink-0"
+                  >
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <span>Integrasi API & database</span>
+                </li>
+              </ul>
+            </div>
             <a
               href="#contact"
-              class="text-blue-600 font-medium inline-flex items-center"
+              class="text-blue-400 font-semibold text-sm inline-flex items-center group-hover:text-blue-300 transition"
             >
-              Pelajari lebih lanjut <i class="fas fa-arrow-right ml-2"></i>
+              Pelajari lebih lanjut
+              <i
+                class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"
+              ></i>
             </a>
           </div>
         </div>
@@ -529,121 +771,138 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="py-20 bg-gray-50">
+    <section id="portfolio" class="py-24 bg-slate-900 text-white">
       <div class="container mx-auto px-6">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">
-            Portofolio <span class="text-blue-600">JPW Media</span>
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span
+            class="text-blue-400 font-semibold text-sm uppercase tracking-wider bg-blue-500/10 px-4 py-1.5 rounded-full border border-blue-500/20 inline-block mb-4"
+            >Hasil Karya</span
+          >
+          <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-4">
+            Portofolio
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400"
+              >JPW Media</span
+            >
           </h2>
-          <p class="text-gray-600 max-w-2xl mx-auto">
+          <p class="text-slate-300 text-lg">
             Beberapa proyek website yang dikerjakan JPW Media untuk bisnis dan
             organisasi di Pekanbaru dan sekitarnya.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Portfolio Item 1 -->
           <div
-            class="portfolio-item rounded-xl shadow-md overflow-hidden relative"
+            class="portfolio-item rounded-2xl shadow-xl overflow-hidden relative group border border-slate-800 bg-slate-950"
           >
             <img
               src="./img/mandiriposs.png"
               alt="Tampilan website berita PT Media Mandiripos"
               loading="lazy"
               decoding="async"
-              class="w-full h-64 object-cover transition duration-500"
+              class="w-full h-72 object-cover transition duration-700 group-hover:scale-110"
             />
             <div
-              class="portfolio-overlay absolute inset-0 flex flex-col justify-center items-center p-6 text-white"
+              class="portfolio-overlay absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8 text-white"
             >
-              <h3 class="text-xl font-bold mb-2">PT. Media Mandiripos</h3>
-              <p class="text-center mb-4">
+              <h3 class="text-2xl font-bold mb-2 text-white">
+                PT. Media Mandiripos
+              </h3>
+              <p class="text-slate-300 text-sm mb-6">
                 Website berita untuk PT Media Mandiripos
               </p>
               <a
                 target="_blank"
                 href="https://www.mandiripos.com"
-                class="border border-white px-4 py-2 rounded-full hover:bg-white hover:text-blue-600 transition"
-                >Lihat Website</a
-              >
+                class="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 px-6 rounded-xl transition shadow-lg shadow-blue-600/30"
+                >Lihat Website
+                <i class="fas fa-external-link-alt ml-2 text-xs"></i
+              ></a>
             </div>
           </div>
 
           <!-- Portfolio Item 2 -->
           <div
-            class="portfolio-item rounded-xl shadow-md overflow-hidden relative"
+            class="portfolio-item rounded-2xl shadow-xl overflow-hidden relative group border border-slate-800 bg-slate-950"
           >
             <img
               src="./img/baznas.png"
               alt="Tampilan website BAZNAS Kabupaten Kampar"
               loading="lazy"
               decoding="async"
-              class="w-full h-64 object-cover transition duration-500"
+              class="w-full h-72 object-cover transition duration-700 group-hover:scale-110"
             />
             <div
-              class="portfolio-overlay absolute inset-0 flex flex-col justify-center items-center p-6 text-white"
+              class="portfolio-overlay absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8 text-white"
             >
-              <h3 class="text-xl font-bold mb-2">Baznas Kampar</h3>
-              <p class="text-center mb-4">
+              <h3 class="text-2xl font-bold mb-2 text-white">Baznas Kampar</h3>
+              <p class="text-slate-300 text-sm mb-6">
                 Website untuk lembaga BAZNAS Kabupaten Kampar
               </p>
               <a
                 target="_blank"
                 href="https://www.baznaskampar.or.id/"
-                class="border border-white px-4 py-2 rounded-full hover:bg-white hover:text-blue-600 transition"
-                >Lihat Website</a
-              >
+                class="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 px-6 rounded-xl transition shadow-lg shadow-blue-600/30"
+                >Lihat Website
+                <i class="fas fa-external-link-alt ml-2 text-xs"></i
+              ></a>
             </div>
           </div>
 
           <!-- Portfolio Item 3 -->
           <div
-            class="portfolio-item rounded-xl shadow-md overflow-hidden relative"
+            class="portfolio-item rounded-2xl shadow-xl overflow-hidden relative group border border-slate-800 bg-slate-950"
           >
             <img
               src="./img/aqiqahrizkah.png"
               alt="Tampilan website Pondok Aqiqah Rizkah"
               loading="lazy"
               decoding="async"
-              class="w-full h-64 object-cover transition duration-500"
+              class="w-full h-72 object-cover transition duration-700 group-hover:scale-110"
             />
             <div
-              class="portfolio-overlay absolute inset-0 flex flex-col justify-center items-center p-6 text-white"
+              class="portfolio-overlay absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8 text-white"
             >
-              <h3 class="text-xl font-bold mb-2">Pondok Aqiqah Rizkah</h3>
-              <p class="text-center mb-4">
+              <h3 class="text-2xl font-bold mb-2 text-white">
+                Pondok Aqiqah Rizkah
+              </h3>
+              <p class="text-slate-300 text-sm mb-6">
                 Website profil dan layanan Pondok Aqiqah Rizkah
               </p>
               <a
                 target="_blank"
                 href="https://pondokaqiqahrizkah.com/"
-                class="border border-white px-4 py-2 rounded-full hover:bg-white hover:text-blue-600 transition"
-                >Lihat Website</a
-              >
+                class="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 px-6 rounded-xl transition shadow-lg shadow-blue-600/30"
+                >Lihat Website
+                <i class="fas fa-external-link-alt ml-2 text-xs"></i
+              ></a>
             </div>
           </div>
 
           <!-- Portfolio Item 4 -->
           <div
-            class="portfolio-item rounded-xl shadow-md overflow-hidden relative"
+            class="portfolio-item rounded-2xl shadow-xl overflow-hidden relative group border border-slate-800 bg-slate-950"
           >
             <img
               src="./img/wedding.png"
               alt="Contoh proyek website untuk wedding organizer"
               loading="lazy"
               decoding="async"
-              class="w-full h-64 object-cover transition duration-500"
+              class="w-full h-72 object-cover transition duration-700 group-hover:scale-110"
             />
             <div
-              class="portfolio-overlay absolute inset-0 flex flex-col justify-center items-center p-6 text-white"
+              class="portfolio-overlay absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8 text-white"
             >
-              <h3 class="text-xl font-bold mb-2">Wedding Organizer</h3>
-              <p class="text-center mb-4">
+              <h3 class="text-2xl font-bold mb-2 text-white">
+                Wedding Organizer
+              </h3>
+              <p class="text-slate-300 text-sm mb-6">
                 Website untuk membantu wedding organizer mempromosikan layanan
               </p>
               <a
                 href="#contact"
-                class="border border-white px-4 py-2 rounded-full hover:bg-white hover:text-blue-600 transition"
+                class="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 px-6 rounded-xl transition shadow-lg shadow-blue-600/30"
                 >Konsultasikan Proyek Serupa</a
               >
             </div>
@@ -651,55 +910,59 @@
 
           <!-- Portfolio Item 5 -->
           <div
-            class="portfolio-item rounded-xl shadow-md overflow-hidden relative"
+            class="portfolio-item rounded-2xl shadow-xl overflow-hidden relative group border border-slate-800 bg-slate-950"
           >
             <img
               src="./img/icccc.png"
               alt="Tampilan website IC College Pekanbaru"
               loading="lazy"
               decoding="async"
-              class="w-full h-64 object-cover transition duration-500"
+              class="w-full h-72 object-cover transition duration-700 group-hover:scale-110"
             />
             <div
-              class="portfolio-overlay absolute inset-0 flex flex-col justify-center items-center p-6 text-white"
+              class="portfolio-overlay absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8 text-white"
             >
-              <h3 class="text-xl font-bold mb-2">IC College Pekanbaru</h3>
-              <p class="text-center mb-4">
+              <h3 class="text-2xl font-bold mb-2 text-white">
+                IC College Pekanbaru
+              </h3>
+              <p class="text-slate-300 text-sm mb-6">
                 Website informasi dan profil IC College
               </p>
               <a
                 target="_blank"
                 href="https://www.ic-college.com/"
-                class="border border-white px-4 py-2 rounded-full hover:bg-white hover:text-blue-600 transition"
-                >Lihat Website</a
-              >
+                class="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 px-6 rounded-xl transition shadow-lg shadow-blue-600/30"
+                >Lihat Website
+                <i class="fas fa-external-link-alt ml-2 text-xs"></i
+              ></a>
             </div>
           </div>
 
           <!-- Portfolio Item 6 -->
           <div
-            class="portfolio-item rounded-xl shadow-md overflow-hidden relative"
+            class="portfolio-item rounded-2xl shadow-xl overflow-hidden relative group border border-slate-800 bg-slate-950"
           >
             <img
               src="./img/lppaa.png"
               alt="Tampilan landing page LPPA Pekanbaru"
               loading="lazy"
               decoding="async"
-              class="w-full h-64 object-cover transition duration-500"
+              class="w-full h-72 object-cover transition duration-700 group-hover:scale-110"
             />
             <div
-              class="portfolio-overlay absolute inset-0 flex flex-col justify-center items-center p-6 text-white"
+              class="portfolio-overlay absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8 text-white"
             >
-              <h3 class="text-xl font-bold mb-2">LPPA Pekanbaru</h3>
-              <p class="text-center mb-4">
+              <h3 class="text-2xl font-bold mb-2 text-white">LPPA Pekanbaru</h3>
+              <p class="text-slate-300 text-sm mb-6">
                 Landing page untuk memperkenalkan layanan LPPA Pekanbaru
               </p>
               <a
                 target="_blank"
                 href="https://lppa-pekanbaru.com/"
-                class="border border-white px-4 py-2 rounded-full hover:bg-white hover:text-blue-600 transition"
-                >Lihat Website</a
-              >
+                class="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 px-6 rounded-xl transition shadow-lg shadow-blue-600/30"
+                >Lihat Website
+                <i class="fas fa-external-link-alt ml-2 text-xs"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -707,7 +970,7 @@
         <div class="text-center mt-12">
           <a
             href="#contact"
-            class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300"
+            class="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-10 rounded-xl shadow-lg shadow-blue-600/25 transition duration-300 transform hover:-translate-y-0.5"
             >Konsultasikan Proyek Anda</a
           >
         </div>
@@ -715,47 +978,79 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
+    <section id="about" class="py-24 bg-slate-950 text-white">
       <div class="container mx-auto px-6">
-        <div class="flex flex-col md:flex-row items-center">
-          <div class="md:w-1/2 mb-10 md:mb-0">
-            <div class="relative overflow-hidden rounded-xl shadow-xl">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+          <div class="lg:w-1/2">
+            <div
+              class="relative overflow-hidden rounded-2xl shadow-2xl border border-slate-800"
+            >
               <img
                 src="hero.png"
                 alt="Ilustrasi kolaborasi tim untuk mengembangkan website"
                 loading="lazy"
                 decoding="async"
-                class="w-full h-auto"
+                class="w-full h-auto object-cover transform hover:scale-105 transition duration-700"
               />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-slate-950/60 to-transparent"
+              ></div>
             </div>
           </div>
-          <div class="md:w-1/2 md:pl-12">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">
-              Tentang <span class="text-blue-600"> JPW Media</span>
+          <div class="lg:w-1/2 lg:pl-6">
+            <span
+              class="text-blue-400 font-semibold text-sm uppercase tracking-wider bg-blue-500/10 px-4 py-1.5 rounded-full border border-blue-500/20 inline-block mb-4"
+              >Profil Agensi</span
+            >
+            <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-6">
+              Tentang
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400"
+              >
+                JPW Media</span
+              >
             </h2>
-            <p class="text-gray-700 mb-6 text-lg">
+            <p class="text-slate-300 mb-8 text-lg leading-relaxed">
               JPW Media adalah penyedia jasa pembuatan website di Pekanbaru,
               Riau. Kami membantu bisnis dari berbagai sektor membangun solusi
               digital melalui desain website, pengembangan, dan optimasi SEO
               sesuai kebutuhan.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 mb-8">
-              <div class="bg-blue-50 p-4 rounded-lg flex-1">
-                <h3 class="font-bold text-blue-600 mb-2">50+</h3>
-                <p class="text-gray-600">Klien</p>
+            <div class="grid grid-cols-3 gap-4 mb-8">
+              <div
+                class="bg-slate-900/80 border border-slate-800 p-5 rounded-xl text-center"
+              >
+                <h3
+                  class="text-2xl md:text-3xl font-extrabold text-blue-400 mb-1"
+                >
+                  50+
+                </h3>
+                <p class="text-slate-400 text-xs md:text-sm">Klien</p>
               </div>
-              <div class="bg-blue-50 p-4 rounded-lg flex-1">
-                <h3 class="font-bold text-blue-600 mb-2">100+</h3>
-                <p class="text-gray-600">Proyek Selesai</p>
+              <div
+                class="bg-slate-900/80 border border-slate-800 p-5 rounded-xl text-center"
+              >
+                <h3
+                  class="text-2xl md:text-3xl font-extrabold text-blue-400 mb-1"
+                >
+                  100+
+                </h3>
+                <p class="text-slate-400 text-xs md:text-sm">Proyek Selesai</p>
               </div>
-              <div class="bg-blue-50 p-4 rounded-lg flex-1">
-                <h3 class="font-bold text-blue-600 mb-2">15</h3>
-                <p class="text-gray-600">Anggota Tim</p>
+              <div
+                class="bg-slate-900/80 border border-slate-800 p-5 rounded-xl text-center"
+              >
+                <h3
+                  class="text-2xl md:text-3xl font-extrabold text-blue-400 mb-1"
+                >
+                  15
+                </h3>
+                <p class="text-slate-400 text-xs md:text-sm">Anggota Tim</p>
               </div>
             </div>
             <a
               href="#contact"
-              class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300"
+              class="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-500 text-white font-semibold py-4 px-8 rounded-xl shadow-lg shadow-blue-600/25 transition duration-300"
               >Hubungi Kami</a
             >
           </div>
@@ -764,41 +1059,57 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-24 bg-slate-900 text-white">
       <div class="container mx-auto px-6">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">
-            Testimoni <span class="text-blue-600">Klien</span>
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span
+            class="text-blue-400 font-semibold text-sm uppercase tracking-wider bg-blue-500/10 px-4 py-1.5 rounded-full border border-blue-500/20 inline-block mb-4"
+            >Ulasan Klien</span
+          >
+          <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-4">
+            Testimoni
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400"
+              >Klien</span
+            >
           </h2>
-          <p class="text-gray-600 max-w-2xl mx-auto">
+          <p class="text-slate-300 text-lg">
             Simak pengalaman klien yang pernah bekerja sama dengan JPW Media.
           </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Testimonial 1 -->
-          <div class="testimonial-card bg-white p-8 rounded-xl shadow-md">
-            <div class="flex items-center mb-4">
-              <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
-                <img
-                  src="https://www.riauwebhost.com/wp-content/uploads/2021/06/unnamed.png"
-                  alt="Foto Imron Rosadi"
-                  loading="lazy"
-                  decoding="async"
-                  class="w-full h-full object-cover"
-                />
+          <div
+            class="testimonial-card bg-slate-950/80 backdrop-blur-xl p-8 rounded-2xl shadow-xl border border-slate-800 flex flex-col justify-between"
+          >
+            <div>
+              <div class="flex items-center mb-6">
+                <div
+                  class="w-14 h-14 rounded-full overflow-hidden mr-4 border-2 border-blue-500/30 flex-shrink-0"
+                >
+                  <img
+                    src="https://www.riauwebhost.com/wp-content/uploads/2021/06/unnamed.png"
+                    alt="Foto Imron Rosadi"
+                    loading="lazy"
+                    decoding="async"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-lg">Imron Rosadi</h4>
+                  <p class="text-slate-400 text-sm">Blogger</p>
+                </div>
               </div>
-              <div>
-                <h4 class="font-bold">Imron Rosadi</h4>
-                <p class="text-gray-500 text-sm">Blogger</p>
-              </div>
+              <p class="text-slate-300 italic text-sm leading-relaxed mb-6">
+                "Jasa pembuatan website di Pekanbaru, Riau yang sangat
+                profesional, senang bisa menjawab kebutuhan Kami sebagai digital
+                marketing yg butuh landing page dan optimasi SEO. "
+              </p>
             </div>
-            <p class="text-gray-600 italic">
-              "Jasa pembuatan website di Pekanbaru, Riau yang sangat
-              profesional, senang bisa menjawab kebutuhan Kami sebagai digital
-              marketing yg butuh landing page dan optimasi SEO. "
-            </p>
-            <div class="flex text-yellow-400 mt-4">
+            <div
+              class="flex text-amber-400 space-x-1 pt-4 border-t border-slate-900"
+            >
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -808,28 +1119,38 @@
           </div>
 
           <!-- Testimonial 2 -->
-          <div class="testimonial-card bg-white p-8 rounded-xl shadow-md">
-            <div class="flex items-center mb-4">
-              <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
-                <img
-                  src="https://www.riauwebhost.com/wp-content/uploads/2024/04/31394568_1016605851798039_5100979803868102656_n.jpg"
-                  alt="Foto Arie Kurnia"
-                  loading="lazy"
-                  decoding="async"
-                  class="w-full h-full object-cover"
-                />
+          <div
+            class="testimonial-card bg-slate-950/80 backdrop-blur-xl p-8 rounded-2xl shadow-xl border border-slate-800 flex flex-col justify-between"
+          >
+            <div>
+              <div class="flex items-center mb-6">
+                <div
+                  class="w-14 h-14 rounded-full overflow-hidden mr-4 border-2 border-blue-500/30 flex-shrink-0"
+                >
+                  <img
+                    src="https://www.riauwebhost.com/wp-content/uploads/2024/04/31394568_1016605851798039_5100979803868102656_n.jpg"
+                    alt="Foto Arie Kurnia"
+                    loading="lazy"
+                    decoding="async"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-lg">Arie Kurnia</h4>
+                  <p class="text-slate-400 text-sm">
+                    Pemilik usaha Toko Bangunan
+                  </p>
+                </div>
               </div>
-              <div>
-                <h4 class="font-bold">Arie Kurnia</h4>
-                <p class="text-gray-500 text-sm">Pemilik usaha Toko Bangunan</p>
-              </div>
+              <p class="text-slate-300 italic text-sm leading-relaxed mb-6">
+                "Setelah Pakai web alhamdulillah banyak yang ngabarin. dari
+                sebanyak yang nanya, ya walaupun gk semuanya yang deal tapi
+                alhamdullah. "
+              </p>
             </div>
-            <p class="text-gray-600 italic">
-              "Setelah Pakai web alhamdulillah banyak yang ngabarin. dari
-              sebanyak yang nanya, ya walaupun gk semuanya yang deal tapi
-              alhamdullah. "
-            </p>
-            <div class="flex text-yellow-400 mt-4">
+            <div
+              class="flex text-amber-400 space-x-1 pt-4 border-t border-slate-900"
+            >
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -839,29 +1160,39 @@
           </div>
 
           <!-- Testimonial 3 -->
-          <div class="testimonial-card bg-white p-8 rounded-xl shadow-md">
-            <div class="flex items-center mb-4">
-              <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
-                <img
-                  src="https://www.riauwebhost.com/wp-content/uploads/2023/03/Sandi-Ersya-Arrasid-S.H.-e1678559380361.jpg"
-                  alt="Foto Sandi Ersa Arrasid"
-                  loading="lazy"
-                  decoding="async"
-                  class="w-full h-full object-cover"
-                />
+          <div
+            class="testimonial-card bg-slate-950/80 backdrop-blur-xl p-8 rounded-2xl shadow-xl border border-slate-800 flex flex-col justify-between"
+          >
+            <div>
+              <div class="flex items-center mb-6">
+                <div
+                  class="w-14 h-14 rounded-full overflow-hidden mr-4 border-2 border-blue-500/30 flex-shrink-0"
+                >
+                  <img
+                    src="https://www.riauwebhost.com/wp-content/uploads/2023/03/Sandi-Ersya-Arrasid-S.H.-e1678559380361.jpg"
+                    alt="Foto Sandi Ersa Arrasid"
+                    loading="lazy"
+                    decoding="async"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-lg">
+                    Sandi Ersa Arrasid
+                  </h4>
+                  <p class="text-slate-400 text-sm">
+                    Pengacara di AHR Lawyers Pekanbaru
+                  </p>
+                </div>
               </div>
-              <div>
-                <h4 class="font-bold">Sandi Ersa Arrasid</h4>
-                <p class="text-gray-500 text-sm">
-                  Pengacara di AHR Lawyers Pekanbaru
-                </p>
-              </div>
+              <p class="text-slate-300 italic text-sm leading-relaxed mb-6">
+                "Pernah Buat Website + SEO disini. Harga Murah dengan Kualitas
+                Premium. The Besttt 👍✨👍✨👍✨ "
+              </p>
             </div>
-            <p class="text-gray-600 italic">
-              "Pernah Buat Website + SEO disini. Harga Murah dengan Kualitas
-              Premium. The Besttt 👍🏻👍🏻👍🏻 "
-            </p>
-            <div class="flex text-yellow-400 mt-4">
+            <div
+              class="flex text-amber-400 space-x-1 pt-4 border-t border-slate-900"
+            >
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -874,12 +1205,19 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-20 bg-blue-600 text-white">
-      <div class="container mx-auto px-6 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+    <section
+      class="py-20 bg-gradient-to-r from-blue-600 to-indigo-600 text-white relative overflow-hidden"
+    >
+      <div
+        class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.1),transparent)] pointer-events-none"
+      ></div>
+      <div class="container mx-auto px-6 text-center relative z-10 max-w-4xl">
+        <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-6">
           Konsultasikan Kebutuhan Website Anda Sekarang!
         </h2>
-        <p class="text-xl mb-8 max-w-2xl mx-auto">
+        <p
+          class="text-lg md:text-xl text-blue-100 mb-10 max-w-2xl mx-auto leading-relaxed"
+        >
           Ingin mengenal kami lebih jauh atau berkonsultasi tentang proyek
           website Anda? Hubungi tim JPW Media untuk membahas kebutuhan bisnis
           dan solusi digital yang sesuai.
@@ -888,71 +1226,104 @@
           <a
             target="_blank"
             href="https://wa.me/6281365036634"
-            class="bg-white hover:bg-gray-100 text-blue-600 font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105"
-            ><i class="fab fa-whatsapp mr-2"></i> Konsultasi Gratis Sekarang</a
+            class="inline-flex items-center justify-center bg-white hover:bg-slate-100 text-blue-600 font-bold py-4 px-8 rounded-xl shadow-xl transition duration-300 transform hover:-translate-y-0.5"
+            ><i class="fab fa-whatsapp mr-2 text-xl"></i> Konsultasi Gratis
+            Sekarang</a
           >
           <a
             href="tel:081365036634"
-            class="bg-transparent hover:bg-blue-700 text-white font-bold py-3 px-8 border-2 border-white rounded-full transition duration-300 transform hover:scale-105"
+            class="inline-flex items-center justify-center bg-transparent hover:bg-white/10 text-white font-bold py-4 px-8 border-2 border-white/80 rounded-xl transition duration-300 backdrop-blur-sm"
           >
-            <i class="fas fa-phone mr-2"></i> 0813-6503-6634
+            <i class="fas fa-phone mr-2 text-lg"></i> 0813-6503-6634
           </a>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-white">
+    <section id="contact" class="py-24 bg-slate-950 text-white">
       <div class="container mx-auto px-6">
-        <div class="flex flex-col md:flex-row">
-          <div class="md:w-1/2 mb-10 md:mb-0 md:pr-12">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">
-              Hubungi <span class="text-blue-600">Kami</span>
+        <div class="flex flex-col lg:flex-row gap-12">
+          <div class="lg:w-1/2">
+            <span
+              class="text-blue-400 font-semibold text-sm uppercase tracking-wider bg-blue-500/10 px-4 py-1.5 rounded-full border border-blue-500/20 inline-block mb-4"
+              >Lokasi & Kontak</span
+            >
+            <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-6">
+              Hubungi
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400"
+                >Kami</span
+              >
             </h2>
-            <p class="text-gray-700 mb-8">
+            <p class="text-slate-300 mb-10 text-lg leading-relaxed">
               Punya proyek atau pertanyaan tentang layanan kami? Isi formulir
               berikut untuk mengirim detail konsultasi melalui WhatsApp.
             </p>
 
             <div class="space-y-6">
-              <div class="flex items-start">
-                <i
-                  class="fas fa-map-marker-alt text-blue-500 text-xl mr-4 mt-1"
-                ></i>
+              <div
+                class="flex items-start bg-slate-900/60 p-5 rounded-2xl border border-slate-800"
+              >
+                <div
+                  class="w-12 h-12 rounded-xl bg-blue-600/10 border border-blue-500/20 text-blue-400 flex items-center justify-center text-lg mr-4 flex-shrink-0"
+                >
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
                 <div>
-                  <h4 class="font-bold text-lg mb-1">Alamat</h4>
-                  <p class="text-gray-700">
+                  <h4 class="font-bold text-lg mb-1 text-white">Alamat</h4>
+                  <p class="text-slate-400 text-sm leading-relaxed">
                     Perum. Graha Gemilang Lestari II No. G01<br />Kampar, Riau
                     28293
                   </p>
                 </div>
               </div>
 
-              <div class="flex items-start">
-                <i class="fas fa-phone-alt text-blue-500 text-xl mr-4 mt-1"></i>
+              <div
+                class="flex items-start bg-slate-900/60 p-5 rounded-2xl border border-slate-800"
+              >
+                <div
+                  class="w-12 h-12 rounded-xl bg-blue-600/10 border border-blue-500/20 text-blue-400 flex items-center justify-center text-lg mr-4 flex-shrink-0"
+                >
+                  <i class="fas fa-phone-alt"></i>
+                </div>
                 <div>
-                  <h4 class="font-bold text-lg mb-1">Telepon</h4>
-                  <p class="text-gray-700">0813-6503-6634</p>
+                  <h4 class="font-bold text-lg mb-1 text-white">Telepon</h4>
+                  <p class="text-slate-400 text-sm">0813-6503-6634</p>
                 </div>
               </div>
 
-              <div class="flex items-start">
-                <i class="fas fa-envelope text-blue-500 text-xl mr-4 mt-1"></i>
+              <div
+                class="flex items-start bg-slate-900/60 p-5 rounded-2xl border border-slate-800"
+              >
+                <div
+                  class="w-12 h-12 rounded-xl bg-blue-600/10 border border-blue-500/20 text-blue-400 flex items-center justify-center text-lg mr-4 flex-shrink-0"
+                >
+                  <i class="fas fa-envelope"></i>
+                </div>
                 <div>
-                  <h4 class="font-bold text-lg mb-1">Email</h4>
+                  <h4 class="font-bold text-lg mb-1 text-white">Email</h4>
                   <a
-                    class="text-gray-700 hover:text-blue-600"
+                    class="text-slate-400 hover:text-blue-400 transition text-sm"
                     href="mailto:riauwebhost@gmail.com"
                     >riauwebhost@gmail.com</a
                   >
                 </div>
               </div>
 
-              <div class="flex items-start">
-                <i class="fas fa-clock text-blue-500 text-xl mr-4 mt-1"></i>
+              <div
+                class="flex items-start bg-slate-900/60 p-5 rounded-2xl border border-slate-800"
+              >
+                <div
+                  class="w-12 h-12 rounded-xl bg-blue-600/10 border border-blue-500/20 text-blue-400 flex items-center justify-center text-lg mr-4 flex-shrink-0"
+                >
+                  <i class="fas fa-clock"></i>
+                </div>
                 <div>
-                  <h4 class="font-bold text-lg mb-1">Jam Operasional</h4>
-                  <p class="text-gray-700">
+                  <h4 class="font-bold text-lg mb-1 text-white">
+                    Jam Operasional
+                  </h4>
+                  <p class="text-slate-400 text-sm leading-relaxed">
                     Senin-Jumat: 09.00-18.00<br />Sabtu-Minggu: Tutup
                   </p>
                 </div>
@@ -960,72 +1331,90 @@
             </div>
           </div>
 
-          <div class="md:w-1/2">
-            <form class="bg-gray-50 p-8 rounded-xl shadow-lg">
+          <div class="lg:w-1/2">
+            <form
+              class="bg-slate-900/80 backdrop-blur-xl p-8 md:p-10 rounded-2xl shadow-2xl border border-slate-800"
+            >
               <div class="mb-6">
-                <label for="name" class="block text-gray-700 font-bold mb-2"
+                <label
+                  for="name"
+                  class="block text-slate-300 font-semibold mb-2 text-sm"
                   >Nama</label
                 >
                 <input
                   type="text"
                   id="name"
-                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 input-focus"
+                  class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
                 />
               </div>
 
               <div class="mb-6">
-                <label for="email" class="block text-gray-700 font-bold mb-2"
+                <label
+                  for="email"
+                  class="block text-slate-300 font-semibold mb-2 text-sm"
                   >Email</label
                 >
                 <input
                   type="email"
                   id="email"
-                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 input-focus"
+                  class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
                 />
               </div>
 
               <div class="mb-6">
-                <label for="phone" class="block text-gray-700 font-bold mb-2"
+                <label
+                  for="phone"
+                  class="block text-slate-300 font-semibold mb-2 text-sm"
                   >Nomor Telepon</label
                 >
                 <input
                   type="tel"
                   id="phone"
-                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 input-focus"
+                  class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
                 />
               </div>
 
               <div class="mb-6">
-                <label for="service" class="block text-gray-700 font-bold mb-2"
+                <label
+                  for="service"
+                  class="block text-slate-300 font-semibold mb-2 text-sm"
                   >Layanan yang Dibutuhkan</label
                 >
                 <select
                   id="service"
-                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 input-focus"
+                  class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
                 >
-                  <option value="">Pilih layanan</option>
-                  <option value="web">Pembuatan Website</option>
-                  <option value="mobile">Website Bisnis</option>
-                  <option value="seo">Optimasi SEO</option>
-                  <option value="design">Google Ads</option>
-                  <option value="other">Lainnya</option>
+                  <option value="" class="bg-slate-950">Pilih layanan</option>
+                  <option value="web" class="bg-slate-950">
+                    Pembuatan Website
+                  </option>
+                  <option value="mobile" class="bg-slate-950">
+                    Website Bisnis
+                  </option>
+                  <option value="seo" class="bg-slate-950">Optimasi SEO</option>
+                  <option value="design" class="bg-slate-950">
+                    Google Ads
+                  </option>
+                  <option value="other" class="bg-slate-950">Lainnya</option>
                 </select>
               </div>
 
-              <div class="mb-6">
-                <label for="message" class="block text-gray-700 font-bold mb-2"
+              <div class="mb-8">
+                <label
+                  for="message"
+                  class="block text-slate-300 font-semibold mb-2 text-sm"
                   >Pesan</label
                 >
                 <textarea
                   id="message"
                   rows="4"
-                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 input-focus"
+                  class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300"
+                class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold py-4 px-6 rounded-xl shadow-lg shadow-blue-600/25 transition duration-300"
               >
                 Kirim Konsultasi via WhatsApp
               </button>
@@ -1034,69 +1423,88 @@
         </div>
       </div>
     </section>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63835.36131473721!2d101.2965125486328!3d0.4220387000000021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6043c99adc700aed%3A0xd343bb7037ca990e!2sJasa%20Pembuatan%20Website%20%26%20SEO%20Pekanbaru!5e0!3m2!1sen!2sid!4v1761505130048!5m2!1sen!2sid"
-      width="100%"
-      height="450"
-      style="border: 0"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
+
+    <!-- Google Maps Embed -->
+    <div
+      class="w-full border-t border-slate-800 filter brightness-90 contrast-125"
+    >
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63835.36131473721!2d101.2965125486328!3d0.4220387000000021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6043c99adc700aed%3A0xd343bb7037ca990e!2sJasa%20Pembuatan%20Website%20%26%20SEO%20Pekanbaru!5e0!3m2!1sen!2sid!4v1761505130048!5m2!1sen!2sid"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
+    <footer class="bg-slate-950 text-white py-16 border-t border-slate-900">
       <div class="container mx-auto px-6">
-        <div class="flex flex-col md:flex-row justify-between">
-          <div class="mb-8 md:mb-0">
-            <div class="flex items-center mb-4">
-              <i class="fas fa-code text-3xl text-blue-500 mr-2"></i>
-              <span class="text-2xl font-bold"
-                >JPW <span class="text-blue-500">Media</span></span
+        <div class="flex flex-col lg:flex-row justify-between gap-12">
+          <div class="max-w-xs">
+            <div class="flex items-center gap-2 mb-6 group">
+              <div
+                class="w-10 h-10 rounded-xl bg-blue-600/20 border border-blue-500/30 flex items-center justify-center text-blue-400"
+              >
+                <i class="fas fa-code text-xl"></i>
+              </div>
+              <span class="text-2xl font-bold tracking-tight text-white"
+                >JPW
+                <span
+                  class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400"
+                  >Media</span
+                ></span
               >
             </div>
-            <p class="text-gray-400 max-w-xs">
+            <p class="text-slate-400 text-sm leading-relaxed">
               Di JPW Media, kami berfokus pada pembuatan website yang tidak
               hanya menarik secara visual, tetapi juga mendukung tujuan bisnis.
               Kami melayani klien di Pekanbaru dan sekitarnya.
             </p>
           </div>
 
-          <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-8 lg:gap-16">
             <div>
-              <h3 class="text-lg font-bold mb-4">Navigasi</h3>
-              <ul class="space-y-2">
+              <h3
+                class="text-sm font-semibold text-white uppercase tracking-wider mb-4"
+              >
+                Navigasi
+              </h3>
+              <ul class="space-y-2.5 text-sm">
                 <li>
                   <a
                     href="#home"
-                    class="text-gray-400 hover:text-white transition"
+                    class="text-slate-400 hover:text-white transition"
                     >Beranda</a
                   >
                 </li>
                 <li>
                   <a
                     href="#services"
-                    class="text-gray-400 hover:text-white transition"
+                    class="text-slate-400 hover:text-white transition"
                     >Layanan</a
                   >
                 </li>
                 <li>
                   <a
                     href="#portfolio"
-                    class="text-gray-400 hover:text-white transition"
+                    class="text-slate-400 hover:text-white transition"
                     >Portofolio</a
                   >
                 </li>
                 <li>
                   <a
                     href="#about"
-                    class="text-gray-400 hover:text-white transition"
+                    class="text-slate-400 hover:text-white transition"
                     >Tentang Kami</a
                   >
                 </li>
                 <li>
                   <a
                     href="#contact"
-                    class="text-gray-400 hover:text-white transition"
+                    class="text-slate-400 hover:text-white transition"
                     >Kontak</a
                   >
                 </li>
@@ -1104,38 +1512,42 @@
             </div>
 
             <div>
-              <h3 class="text-lg font-bold mb-4">Layanan</h3>
-              <ul class="space-y-2">
+              <h3
+                class="text-sm font-semibold text-white uppercase tracking-wider mb-4"
+              >
+                Layanan
+              </h3>
+              <ul class="space-y-2.5 text-sm">
                 <li>
-                  <a href="/" class="text-gray-400 hover:text-white transition"
+                  <a href="/" class="text-slate-400 hover:text-white transition"
                     >Jasa Pembuatan Website</a
                   >
                 </li>
                 <li>
                   <a
                     href="/jasa-seo-pekanbaru.html"
-                    class="text-gray-400 hover:text-white transition"
+                    class="text-slate-400 hover:text-white transition"
                     >Jasa SEO</a
                   >
                 </li>
                 <li>
                   <a
                     href="/jasa-digital-marketing-pekanbaru.html"
-                    class="text-gray-400 hover:text-white transition"
+                    class="text-slate-400 hover:text-white transition"
                     >Jasa Digital Marketing</a
                   >
                 </li>
                 <li>
                   <a
                     href="/jasa-pembuatan-logo.html"
-                    class="text-gray-400 hover:text-white transition"
+                    class="text-slate-400 hover:text-white transition"
                     >Jasa Pembuatan Logo</a
                   >
                 </li>
                 <li>
                   <a
                     href="/web-development.html"
-                    class="text-gray-400 hover:text-white transition"
+                    class="text-slate-400 hover:text-white transition"
                     >Pengembangan Website</a
                   >
                 </li>
@@ -1143,36 +1555,40 @@
             </div>
 
             <div>
-              <h3 class="text-lg font-bold mb-4">Ikuti Kami</h3>
-              <div class="flex space-x-4 mb-4">
+              <h3
+                class="text-sm font-semibold text-white uppercase tracking-wider mb-4"
+              >
+                Ikuti Kami
+              </h3>
+              <div class="flex space-x-3 mb-6">
                 <a
                   href="https://web.facebook.com/jasapembuatanwebsitepekanbaruriau"
                   aria-label="Facebook JPW Media"
-                  class="text-gray-400 hover:text-white transition"
-                  ><i class="fab fa-facebook-f text-xl"></i
+                  class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-white hover:border-blue-500/50 flex items-center justify-center transition"
+                  ><i class="fab fa-facebook-f"></i
                 ></a>
                 <a
                   href="https://x.com/pembuatanwebpku"
                   aria-label="X JPW Media"
-                  class="text-gray-400 hover:text-white transition"
-                  ><i class="fab fa-twitter text-xl"></i
+                  class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-white hover:border-blue-500/50 flex items-center justify-center transition"
+                  ><i class="fab fa-twitter"></i
                 ></a>
                 <a
                   href="https://www.instagram.com/jasapembuatanwebsitepekanbaru/"
                   aria-label="Instagram JPW Media"
-                  class="text-gray-400 hover:text-white transition"
-                  ><i class="fab fa-instagram text-xl"></i
+                  class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-white hover:border-blue-500/50 flex items-center justify-center transition"
+                  ><i class="fab fa-instagram"></i
                 ></a>
                 <a
                   href="https://www.linkedin.com/company/jasa-pembuatan-website-pekanbaru"
                   aria-label="LinkedIn JPW Media"
-                  class="text-gray-400 hover:text-white transition"
-                  ><i class="fab fa-linkedin-in text-xl"></i
+                  class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-white hover:border-blue-500/50 flex items-center justify-center transition"
+                  ><i class="fab fa-linkedin-in"></i
                 ></a>
               </div>
               <a
                 href="mailto:riauwebhost@gmail.com"
-                class="text-gray-400 hover:text-white transition"
+                class="text-slate-400 hover:text-white transition text-sm inline-block"
                 >Email JPW Media</a
               >
             </div>
@@ -1180,12 +1596,13 @@
         </div>
 
         <div
-          class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
+          class="border-t border-slate-900 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center text-sm"
         >
-          <p class="text-gray-400 mb-4 md:mb-0">
+          <p class="text-slate-500 mb-4 md:mb-0">
             © 2026 JPW Media Pekanbaru. Dibuat oleh
             <a
               style="color: salmon"
+              class="hover:underline"
               href="https://jasapembuatanwebsitepekanbaru.github.io/"
             >
               Jasa Pembuatan Website Pekanbaru
@@ -1195,44 +1612,11 @@
       </div>
     </footer>
 
-    <!-- Fixed Bottom Menu (Mobile) -->
-    <div class="fixed-bottom-menu md:hidden">
-      <div class="container mx-auto px-6 py-3">
-        <div class="flex justify-around">
-          <a href="#home" class="flex flex-col items-center text-white text-sm">
-            <i class="fas fa-home text-xl mb-1"></i>
-            <span>Beranda</span>
-          </a>
-          <a
-            href="#services"
-            class="flex flex-col items-center text-white text-sm"
-          >
-            <i class="fas fa-concierge-bell text-xl mb-1"></i>
-            <span>Layanan</span>
-          </a>
-          <a
-            href="#portfolio"
-            class="flex flex-col items-center text-white text-sm"
-          >
-            <i class="fas fa-briefcase text-xl mb-1"></i>
-            <span>Portofolio</span>
-          </a>
-          <a
-            target="_blank"
-            href="https://wa.me/6281365036634"
-            class="flex flex-col items-center text-white text-sm"
-          >
-            <i class="fab fa-whatsapp text-xl mb-1"></i>
-            <span>Kontak</span>
-          </a>
-        </div>
-      </div>
-    </div>
-
     <!-- Back to Top Button -->
     <button
       id="back-to-top"
-      class="fixed bottom-24 md:bottom-8 right-8 bg-blue-600 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition duration-300 opacity-0 invisible"
+      class="fixed bottom-8 right-8 bg-blue-600 hover:bg-blue-500 text-white w-12 h-12 rounded-xl shadow-xl flex items-center justify-center transition duration-300 opacity-0 invisible z-50 border border-blue-400/30"
+      aria-label="Kembali ke atas"
     >
       <i class="fas fa-arrow-up"></i>
     </button>
@@ -1240,10 +1624,66 @@
     <a
       href="https://wa.me/6281365036634"
       target="_blank"
-      class="whatsapp-float whatsapp-bg text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl shadow-lg hover:bg-green-500 transition duration-300"
+      rel="noopener noreferrer"
+      aria-label="Chat WhatsApp"
+      class="whatsapp-float whatsapp-bg text-white w-14 h-14 rounded-2xl flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition duration-300 z-50"
     >
       <i class="fab fa-whatsapp"></i>
     </a>
     <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        if (menuBtn && mobileMenu) {
+          menuBtn.addEventListener("click", () => {
+            const isExpanded = menuBtn.getAttribute("aria-expanded") === "true";
+            menuBtn.setAttribute("aria-expanded", !isExpanded);
+            mobileMenu.classList.toggle("hidden");
+
+            // Update inert attribute for accessibility
+            if (mobileMenu.classList.contains("hidden")) {
+              mobileMenu.setAttribute("inert", "");
+            } else {
+              mobileMenu.removeAttribute("inert");
+            }
+          });
+
+          // Tutup menu mobile ketika salah satu link di dalamnya diklik
+          const mobileLinks = mobileMenu.querySelectorAll("a");
+          mobileLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+              mobileMenu.classList.add("hidden");
+              menuBtn.setAttribute("aria-expanded", "false");
+              mobileMenu.setAttribute("inert", "");
+            });
+          });
+        }
+
+        // Back to Top Button
+        const backToTopBtn = document.getElementById("back-to-top");
+
+        if (backToTopBtn) {
+          window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+              backToTopBtn.classList.remove("opacity-0", "invisible");
+              backToTopBtn.classList.add("opacity-100", "visible");
+            } else {
+              backToTopBtn.classList.add("opacity-0", "invisible");
+              backToTopBtn.classList.remove("opacity-100", "visible");
+            }
+          });
+
+          backToTopBtn.addEventListener("click", () => {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+          });
+        }
+      });
+    </script>
   </body>
 </html>
